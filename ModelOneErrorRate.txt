@@ -1,0 +1,49 @@
+
+Call:
+lm(formula = target_deathrate ~ ., data = train)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-102.563  -10.789   -0.623   10.948  133.053 
+
+Coefficients: (2 not defined because of singularities)
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)             1.853e+02  1.840e+01  10.068  < 2e-16 ***
+medincome               1.773e-04  9.388e-05   1.889 0.059000 .  
+popest2015             -2.766e-05  7.549e-06  -3.664 0.000254 ***
+avganncount            -2.871e-03  9.066e-04  -3.167 0.001564 ** 
+avgdeathsperyear        2.276e-02  4.929e-03   4.617 4.12e-06 ***
+incidencerate           1.904e-01  8.908e-03  21.371  < 2e-16 ***
+medincome.1                    NA         NA      NA       NA    
+popest2015.1                   NA         NA      NA       NA    
+povertypercent          3.795e-01  1.882e-01   2.017 0.043857 *  
+studypercap             5.484e-04  7.877e-04   0.696 0.486340    
+medianage               1.589e-03  1.004e-02   0.158 0.874257    
+medianagemale          -3.976e-01  2.452e-01  -1.621 0.105122    
+medianagefemale        -1.806e-01  2.526e-01  -0.715 0.474885    
+percentmarried          1.350e+00  1.990e-01   6.783 1.51e-11 ***
+pctnohs18_24           -1.330e-01  6.566e-02  -2.025 0.042985 *  
+pcths18_24              1.283e-01  5.792e-02   2.214 0.026924 *  
+pctbachdeg18_24        -2.235e-01  1.302e-01  -1.716 0.086271 .  
+pcths25_over            5.000e-01  1.137e-01   4.396 1.15e-05 ***
+pctbachdeg25_over      -1.003e+00  1.849e-01  -5.425 6.44e-08 ***
+pctemployed16_over     -7.629e-01  1.277e-01  -5.974 2.69e-09 ***
+pctunemployed16_over    1.094e-01  1.975e-01   0.554 0.579829    
+pctprivatecoverage     -6.407e-01  1.525e-01  -4.202 2.75e-05 ***
+pctempprivcoverage      4.316e-01  1.216e-01   3.549 0.000395 ***
+pctpubliccoverage      -4.959e-01  2.666e-01  -1.860 0.063046 .  
+pctpubliccoveragealone  3.824e-01  3.301e-01   1.159 0.246776    
+pctwhite               -1.209e-01  6.644e-02  -1.820 0.068901 .  
+pctblack               -4.144e-02  6.451e-02  -0.642 0.520688    
+pctasian                1.239e-01  2.218e-01   0.559 0.576548    
+pctotherrace           -8.616e-01  1.406e-01  -6.126 1.07e-09 ***
+pctmarriedhouseholds   -1.300e+00  1.882e-01  -6.909 6.42e-12 ***
+birthrate              -8.049e-01  2.241e-01  -3.592 0.000336 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 19.06 on 2150 degrees of freedom
+  (106 observations deleted due to missingness)
+Multiple R-squared:  0.5262,	Adjusted R-squared:   0.52 
+F-statistic: 85.28 on 28 and 2150 DF,  p-value: < 2.2e-16
+
